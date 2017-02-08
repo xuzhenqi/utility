@@ -1,0 +1,14 @@
+{% block play %}
+
+<h3> {{ title  }} </h3>
+<video controls autoplay height=480>
+    <source src="static/data/videos/{{ video_file  }}" type="video/mp4"> 
+    Your browser does not support this video format.
+</video>
+<h3>Video Info</h1>
+<p> fps: {{ fps  }} </p>
+<p> size: {{ size  }} </p>
+<p> frames: {{ frames }} </p>
+<p> name: {{ name }} </p>
+<p> serial_label: {{ serial_label }} </p>
+{% endblock %}
